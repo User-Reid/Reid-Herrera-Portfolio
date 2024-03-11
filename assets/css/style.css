@@ -1,0 +1,286 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 100%;
+  
+}
+
+html {
+  background-color: #18805b;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  line-height: .8;
+  max-width: 100%;
+}
+
+.banner {
+  overflow: hidden;
+  max-width: 100%;
+  object-fit: cover;
+  height: 214px;
+}
+
+.header-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: #18805b; 
+  padding: 10px 20px; 
+  text-align: center;
+  font-size: 9vw;
+  font-size: 9vh;
+  max-width: 100%;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+}
+
+#port-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #81f9cb;
+  box-shadow: 5px 5px 5px black;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  color: black;
+}
+
+main {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  max-width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-image: url("../css/images/103932-green-stripes-pattern.jpg");
+  background-repeat: repeat;
+  line-height: 1.5;
+}
+
+aside {
+  display: block;
+  width: 150px;
+  height: 100%;
+  margin-left: 5px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  width: 80%;
+}
+
+.overall-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-1 {
+  display: flex;
+  border-radius: 5px;
+  border-width: 5px;
+  justify-content: space-around;
+  max-width: 100%;
+  box-shadow: 5px 5px 5px black;
+  border-style: solid;
+  border-color: black;
+  color: white;
+  border-width: 3px;
+  margin: 10px;
+  background-color: #18805b;
+}
+
+.container-2 {
+  display: flex;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 5px;
+  justify-content: space-around;
+  max-width: 100%;
+  box-shadow: 5px 5px 5px black;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  margin: 10px;
+  background-color: #18805b;
+  color: white;
+}
+
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 10px;
+  background-image: url("../css/images/twitch-background-big-color.png");
+  height: 360px;
+}
+
+.container-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  
+}
+
+.container-5 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  box-shadow: 5px 5px 5px black;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  background-color: #81f9cb;
+  color: black;
+}
+
+#contact {
+  display: flex;
+  float: left;
+  max-width: 100%;
+}
+
+#contact p {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  text-align: center;
+}
+
+.container-6 {
+  display: flex;
+  background-color: #81f9cb;
+  justify-content: center;
+  max-width: 100%;
+  box-shadow: 5px 5px 5px black;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  color: black;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  text-align: center;
+  color: black;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #18805b;
+  color: white;
+}
+
+/* Image Section */
+
+.images {
+  opacity: 1;
+  display: block;
+  transition: .3s ease;
+  backface-visibility: hidden;
+  position: relative;
+  width: auto;
+  height: 170px;
+  margin: 10px;
+  background-color: black;
+  box-shadow: 5px 5px 5px black;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  justify-content: space-around;
+}
+
+.bigger-image {
+  opacity: 1;
+  display: flex;
+  transition: .3s ease;
+  backface-visibility: hidden;
+  position: relative;
+  max-width: 90vw;
+  height: 340px;
+  background-color: black;
+  box-shadow: 5px 5px 5px black;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.middle {
+  transition: .3s ease;
+  opacity: 0;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  width: 60%;
+}
+
+.images:hover .image {
+  opacity: 0.2;
+  transition: .3s ease;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.bigger-image:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.images:hover .middle {
+  opacity: 1;
+  transition: .3s ease;
+}
+
+.bigger-image:hover .middle {
+  opacity: 1;
+  transition: .3s ease;
+}
+
+.anchor-text {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  padding: 16px 32px;
+  text-align: center;
+}
